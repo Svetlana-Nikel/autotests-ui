@@ -7,10 +7,10 @@ with sync_playwright() as playwright:
 
     page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
 
-    #unknown = page.locator('#unknown')
+    #unknown = pages.locator('#unknown')
     #expect(unknown).to_be_visible()
 
-    # login_button = page.get_by_test_id('login-page-login-button')
+    # login_button = pages.get_by_test_id('login-pages-login-button')
     # login_button.fill('unknown')
 
     page.evaluate(

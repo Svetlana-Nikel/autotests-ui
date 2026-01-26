@@ -16,7 +16,7 @@ def test_successful_registration(chromium_page: Page):
     password_input = chromium_page.get_by_test_id('registration-form-password-input').locator('input')
     password_input.fill('password')
 
-    registration_button = chromium_page.get_by_test_id('registration-page-registration-button')
+    registration_button = chromium_page.get_by_test_id('registration-pages-registration-button')
     registration_button.click()
 
     dashboard_title = chromium_page.get_by_test_id('dashboard-toolbar-title-text')
